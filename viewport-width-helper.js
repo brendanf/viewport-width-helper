@@ -13,7 +13,7 @@
     
     // Setup widget properties
     
-    elem.id = 'rwd-doodad';
+    elem.id = 'viewport-width-helper';
     
     elem.style.position = 'fixed';
     elem.style.bottom = '0';
@@ -37,7 +37,7 @@
     
     // Get widget reference
     
-    var widget = document.getElementById('rwd-doodad');
+    var widget = $('#viewport-width-helper');
     
     // Monitor for browser resizing
     
