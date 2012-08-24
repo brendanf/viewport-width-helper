@@ -8,7 +8,7 @@
 
 (function() {
 
-    var theBody = jQuery('body');
+    var viewport = jQuery('body');
     var elem = document.createElement('div');
     
     // Setup widget properties
@@ -29,11 +29,11 @@
     elem.style.lineHeight = '1';
     elem.style.textAlign = 'center';
     
-    elem.innerHTML = theBody.width();
+    elem.innerHTML = viewport.width();
     
     // Add widget to page
     
-    theBody.append(elem);
+    viewport.append(elem);
     
     // Get widget reference
     
@@ -42,7 +42,7 @@
     // Monitor for browser resizing
     
     jQuery(window).resize(function() {
-        widget.innerHTML = theBody.width();
+        widget.innerHTML = viewport.width();
     });
     
 })();
