@@ -37,12 +37,12 @@
     
     // Get widget reference
     
-    var widget = $('#viewport-width-helper');
+    var widget = jQuery('#viewport-width-helper');
     
     // Monitor for browser resizing
     
     jQuery(window).resize(function() {
-        widget.innerHTML = viewport.width();
+        widget.html( viewport.width() );
     });
     
 })();
